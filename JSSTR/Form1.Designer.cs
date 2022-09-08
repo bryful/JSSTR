@@ -29,6 +29,7 @@ namespace JSSTR
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.textBox2 = new System.Windows.Forms.TextBox();
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -54,9 +55,7 @@ namespace JSSTR
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(909, 217);
 			this.textBox1.TabIndex = 0;
-			this.textBox1.Text = "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n</head>\r\n<body>\r\n<p><span style=\"font-size: 18pt" +
-    ";\"><strong>アナタは</strong></span></p>\r\n<p><span style=\"font-size: 12pt;\">さｄふぁｓｋｆんｓ" +
-    "ｆｋｂうぇｇ</span></p>\r\n</body>\r\n</html>";
+			this.textBox1.Text = resources.GetString("textBox1.Text");
 			this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
 			// 
 			// textBox2
@@ -70,7 +69,6 @@ namespace JSSTR
 			this.textBox2.ReadOnly = true;
 			this.textBox2.Size = new System.Drawing.Size(909, 203);
 			this.textBox2.TabIndex = 1;
-			this.textBox2.Text = "asdasdfsf\r\nfsdfsd";
 			// 
 			// menuStrip1
 			// 

@@ -25,6 +25,7 @@ namespace JSSTR
 			for(int i=0; i< src.Length;i++)
 			{
 				string s = src[i];
+				s = s.Replace("\\", "\\\\");
 				s = s.Replace("\"", "\\\"");
 				s = s.Replace("\t", "\\t");
 				if (isRN) s += "\\r\\n";
